@@ -26,5 +26,6 @@ Future<String> getLyrics(
   HttpClientResponse response = await request.close();
   final stringData = await response.transform(utf8.decoder).join();
   return stringData;
+
   client.close();
 }
